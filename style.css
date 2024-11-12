@@ -15,3 +15,54 @@ body {
     background-color: #ffffff;
     margin: 0;
 }
+
+header {
+    background-color: greenyellow;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+/* configura aqui a imagem no logo no canto esquerdo superior esquerdo */
+.navBar img {
+    width: 100%;
+    height: 100%;
+}
+
+.navBar a {
+    text-decoration: none;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.navBar a:hover {
+    color:blue;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    background-color: #3388f5;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+footer a {
+    margin-top: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
