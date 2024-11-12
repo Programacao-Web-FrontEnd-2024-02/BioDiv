@@ -46,14 +46,100 @@ header {
     color:blue;
 }
 
-footer {
-    bottom: 0;
-    text-align: center;
-    background-color: #3388f5;
+.informacoesPrincipais {
+    background-color: #32afa2;
     color: #fff;
-    height: 50px;
+}
+
+.informacoesPrincipais {
+    padding-bottom: 60px;
+}
+
+.informacoesPrincipais p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.informacoesPrincipais h1 {
+    padding-top: 20px;
+    font-family: "Doto", sans-serif;
+    font-weight: 900;
+    margin-left: 80px;
+}
+
+#facaSuaParte {
+    align-content: center;
+    background-color: #ffffff;
+}
+
+#facaSuaParte h1 {
+    color: red;
+}
+
+.dicasDoQueFazer {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.dicasDoQueFazer {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.dicasDoQueFazer p {
+    color: #000;
+}
+
+.dicasDoQueFazer h2,
+#gallery h1 {
+    color: #3388f5;
+}
+
+.dicasDoQueFazer h3 {
+    font-style: italic;
+}
+
+.conteudo {
+    align-items: center;
     width: 100%;
-    position: fixed;
+}
+
+.dicasDoQueFazer img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border-radius: 8%;
+}
+
+.imgEntreAssuntos {
+    padding: 10px;
+    margin-right: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgEntreAssuntos img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+footer { 
+    text-align: center; 
+    background-color: #3388f5; 
+    color: #fff; 
+    height: 50px; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0; 
 }
 
 footer a {
