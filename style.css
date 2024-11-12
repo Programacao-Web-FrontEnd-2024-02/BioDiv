@@ -58,6 +58,7 @@ header {
 .informacoesPrincipais p {
     margin-left: 200px;
     margin-right: 200px;
+    font-family: "Sour Gummy", sans-serif;
 }
 
 .informacoesPrincipais h1 {
@@ -73,7 +74,7 @@ header {
 }
 
 #facaSuaParte h1 {
-    color: red;
+    color: rgb(255, 0, 170);
 }
 
 .dicasDoQueFazer {
@@ -96,13 +97,13 @@ header {
     color: #000;
 }
 
-.dicasDoQueFazer h2,
-#gallery h1 {
+.dicasDoQueFazer h2 {
     color: #3388f5;
 }
 
 .dicasDoQueFazer h3 {
     font-style: italic;
+    color: red;
 }
 
 .conteudo {
@@ -129,8 +130,6 @@ header {
     height: auto;
     object-fit: contain;
 }
-
-
 
 footer { 
     text-align: center; 
