@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: ffffff;
+    background-color: #E2FCC5;
 }
 
 .navBar {
@@ -40,15 +40,15 @@ header {
     text-decoration: none;
     align-content: center;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: #193010;
 }
 .navBar a:hover {
-    color:blue;
+    color:#678C30;
 }
 
 .informacoesPrincipais {
     border-top: 1px solid transparent;
-    background-color: #49B304;
+    background-color: #447D02;
     color: #ffffff;
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 .informacoesPrincipais h1 {
-    color: #235202;
+    color: #ffffff;
     font-size: 32px;
     padding-top: 20px;
     font-family: "Open Sans", sans-serif;
@@ -75,7 +75,7 @@ header {
 
 #facaSuaParte {
     align-content: center;
-    background-color: #EBFFD2;
+    background-color: #E2FCC5;
 }
 
 #facaSuaParte h1 {
@@ -83,7 +83,7 @@ header {
     padding-top: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
-    color: #235202;
+    color: #193010;
     text-align: center;
 }
 
@@ -104,7 +104,7 @@ header {
 }
 
 .dicasDoQueFazer p {
-    color: #000;
+    color: #193010;
 }
 
 .dicasDoQueFazer h2 {
@@ -142,9 +142,11 @@ header {
 }
 
 footer { 
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid transparent;
     text-align: center; 
-    background-color: #3388f5; 
-    color: #fff; 
+    background-color: #99BF73; 
+    color: #ffffff; 
     height: 50px; 
     width: 100%; 
     position: relative; 
@@ -152,6 +154,7 @@ footer {
 }
 
 footer a {
+    color: #193010; 
     margin-top: 8px;
     margin-left: 20px;
     display: flex;
