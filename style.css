@@ -30,7 +30,6 @@ header {
 
 }
 
-/* configura aqui a imagem no logo no canto esquerdo superior esquerdo */
 .navBar img {
     width: 20%;
     height: 20%;
@@ -40,10 +39,14 @@ header {
     text-decoration: none;
     align-content: center;
     font-family: 'Poppins', sans-serif;
-    color: #193010;
+    color: #214013;
 }
 .navBar a:hover {
     color:#678C30;
+}
+
+.navBar i {
+    color: #214013;
 }
 
 .informacoesPrincipais {
@@ -83,7 +86,7 @@ header {
     padding-top: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
-    color: #193010;
+    color: #214013;
     text-align: center;
 }
 
