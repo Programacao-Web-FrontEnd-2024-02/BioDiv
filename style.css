@@ -47,7 +47,7 @@ header {
 }
 
 .informacoesPrincipais {
-    background-color: #447D02;
+    background-color: #49B304;
     color: #ffffff;
 }
 
@@ -58,10 +58,14 @@ header {
 .informacoesPrincipais p {
     margin-left: 200px;
     margin-right: 200px;
-    font-family: "Sour Gummy", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
 }
 
 .informacoesPrincipais h1 {
+    color: #235202;
+    font-size: 32px;
     padding-top: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
@@ -74,7 +78,7 @@ header {
 }
 
 #facaSuaParte h1 {
-    font-size: 200%;
+    font-size: 40px;
     padding-top: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
