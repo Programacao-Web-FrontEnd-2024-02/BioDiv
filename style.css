@@ -12,7 +12,7 @@
 */
 
 body {
-    background-color: #EBFFD2;
+    background-color: #ffffff;
     margin: 0;
 }
 
@@ -47,8 +47,8 @@ header {
 }
 
 .informacoesPrincipais {
-    background-color: #32afa2;
-    color: #EBFFD2;
+    background-color: #447D02;
+    color: #ffffff;
 }
 
 .informacoesPrincipais {
@@ -70,15 +70,16 @@ header {
 
 #facaSuaParte {
     align-content: center;
-    background-color: #ffffff;
+    background-color: #EBFFD2;
 }
 
 #facaSuaParte h1 {
+    font-size: 200%;
     padding-top: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
-    color: #1B4001;
-    align-content: center;
+    color: #235202;
+    text-align: center;
 }
 
 .dicasDoQueFazer {
