@@ -12,7 +12,7 @@
 */
 
 body {
-    background-color: #CDE8B1;
+    background-color: #EBFFD2;
     margin: 0;
 }
 
@@ -32,8 +32,8 @@ header {
 
 /* configura aqui a imagem no logo no canto esquerdo superior esquerdo */
 .navBar img {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
 }
 
 .navBar a {
@@ -48,7 +48,7 @@ header {
 
 .informacoesPrincipais {
     background-color: #32afa2;
-    color: #fff;
+    color: #EBFFD2;
 }
 
 .informacoesPrincipais {
@@ -74,7 +74,11 @@ header {
 }
 
 #facaSuaParte h1 {
-    color: rgb(255, 0, 170);
+    padding-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    color: #1B4001;
+    align-content: center;
 }
 
 .dicasDoQueFazer {
