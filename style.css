@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: greenyellow;
+    background-color: ffffff;
 }
 
 .navBar {
@@ -47,6 +47,7 @@ header {
 }
 
 .informacoesPrincipais {
+    border-top: 1px solid transparent;
     background-color: #49B304;
     color: #ffffff;
 }
