@@ -1,8 +1,8 @@
 # BioDiv
 
-**Autores:** Gabriel Brochi Zani Dias, Gabriel Rodrigues Granjeia  
-**Objetivo de Desenvolvimento Sustentável (ODS):** ODS 12 - Consumo e Produção Responsáveis  
-**Tema:** Conscientização sobre o desperdício
+**Autores:** Gabriel Brochi Zani Dias, Gabriel Rodrigues Granjeia.  
+**Objetivo de Desenvolvimento Sustentável (ODS):** ODS 12 - Consumo e Produção Responsáveis.  
+**Tema:** Conscientização sobre o desperdício.
 
 ## Descrição
 
