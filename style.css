@@ -16,6 +16,13 @@ body {
     margin: 0;
 }
 
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 header {
     background-color: #E2FCC5;
 }
@@ -49,6 +56,8 @@ header {
 .navBar i {
     color: #214013;
 }
+
+
 
 .informacoesPrincipais {
     border-top: 1px solid transparent;
@@ -222,6 +231,76 @@ h5 {
     max-width: 600px;
     height: auto;
     object-fit: contain;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tituloFormulario {
+    text-align: center;
+    color: #214013;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #214013;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea {
+    width: 97%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #678C30;
+    outline: none;
+    box-shadow: 0 0 5px rgba(103, 140, 48, 0.5);
+}
+
+button {
+    background-color: #678C30;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4d6a21;
 }
 
 footer {
