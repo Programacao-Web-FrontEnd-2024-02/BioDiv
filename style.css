@@ -151,6 +151,11 @@ p a:hover {
     font-size: 20px;
 }
 
+.navBar a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
 .navBar img {
     width: 20%;
     height: 20%;
@@ -403,27 +408,34 @@ button:hover {
 }
 
 footer {
-    border-top: 5px solid transparent;
-    border-bottom: 10px solid transparent;
+    background-color: #333;
+    padding: 20px 0;
     text-align: center;
-    background-color: #99BF73;
-    color: #ffffff;
-    height: 50px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
+    font-family: Arial, sans-serif;
 }
 
 footer a {
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-    color: #193010;
-    margin-top: 8px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 12px;
+    color: #fff;
     text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    position: relative;
 }
+
+footer a:hover {
+    color: #00aaff;
+}
+
+footer a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+footer a:focus {
+    outline: none;
+}
+
+footer a:hover i {
+    color: #00aaff;
+}
+
