@@ -16,7 +16,7 @@ body {
     margin: 0;
 }
 
-.cadastro {
+.cadastro, .login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,6 @@ header {
     justify-content: space-around;
     font-weight: 900;
     font-size: 20px;
-
 }
 
 .navBar img {
@@ -57,7 +56,115 @@ header {
     color: #214013;
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E2FCC5;
+}
 
+.formulario {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.tituloFormulario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #214013;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #214013;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #214013;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #99BF73;
+}
+
+button {
+    background-color: #678C30;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #99BF73;
+}
+
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+p a {
+    color: #678C30;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.navBar img {
+    width: 20%;
+    height: 20%;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #214013;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar a:hover {
+    color: #678C30;
+}
 
 .informacoesPrincipais {
     border-top: 1px solid transparent;
@@ -176,14 +283,6 @@ h5 {
     background-color: #E2FCC5;
     margin-top: 20px;
     margin-bottom: 60px;
-}
-
-.dicasDoQueFazer {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
 }
 
 .dicasDoQueFazer {
