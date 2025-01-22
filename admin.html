@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodiversidade importa!</title>
+    <title>Admin - Biodiversidade importa!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    
 </head>
-<body">
+<body>
     <header>
         <nav class="navBar">
             <a href="index.html"><img src="assets/Logo.png" alt="Logo"></a>
@@ -20,33 +20,21 @@
             <a href="login.html"><i class="fas fa-home"></i> Login</a>
         </nav>
     </header>
-    <main class="cadastro">
+    <main class="admin">
         <div class="formulario">
-            <h2 class="tituloFormulario">Formulário de Cadastro</h2>
-            <form id="cadastroForm">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required><br><br>
-
-                <label for="data_nascimento">Data de Nascimento:</label>
-                <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required><br><br>
-
-                <label for="endereco">Endereço:</label>
-                <textarea id="endereco" name="endereco" rows="4" required></textarea><br><br>
-
+            <h2 class="tituloFormulario">Cadastro de Usuário</h2>
+            <form id="formCadastro" onsubmit="salvarCadastro(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            
                 <button type="submit">Cadastrar</button>
-                
             </form>
         </div>
     </main>
+
     <footer>
         <a href="https://gabriel-16n5.github.io/cv/">Gabriel Granjeia</a>
         <a href="https://gabrielbrochi.github.io/Curriculum-Vitae/">Gabriel Brochi</a>

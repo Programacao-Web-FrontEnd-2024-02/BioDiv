@@ -16,7 +16,7 @@ body {
     margin: 0;
 }
 
-.cadastro, .login {
+.cadastro, .login, .admin{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background-color: #E2FCC5;
+    background-color: #99BF73;
 }
 
 .navBar {
@@ -133,6 +133,7 @@ p {
     color: #ffffff;
 }
 
+
 p a {
     color: #678C30;
     text-decoration: none;
@@ -190,7 +191,7 @@ p a:hover {
 }
 
 .informacoesPrincipais h1 {
-    color: #99BF73;
+    color: #E2FCC5;
     font-size: 32px;
     padding-top: 20px;
     font-family: "Open Sans", sans-serif;
@@ -438,4 +439,3 @@ footer a:focus {
 footer a:hover i {
     color: #00aaff;
 }
-
