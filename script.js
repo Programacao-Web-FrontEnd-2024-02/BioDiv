@@ -46,24 +46,24 @@ function obterDoLocalStorage(chave) {
 // Chamando a função de inicialização
 inicializarCadastro();
 
-function salvarCadastro(event) {
+function salvarCadastroAdmin(event) {
     event.preventDefault();
 
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
 
     // Criando o objeto de cadastro
-    const usuario = {
+    const cadastro = {
         nome,
-        email
+        email,
     };
 
     // Salvando no Local Storage
-    adicionarAoLocalStorage('usuarios', usuario);
+    adicionarAoLocalStorage('cadastros', cadastro);
 
     // Exibindo mensagem e resetando o formulário
-    alert('Usuário cadastrado com sucesso!');
-    document.getElementById('formCadastro').reset();
+    alert('Cadastro realizado com sucesso!');
+    document.getElementById('cadastroForm').reset();
 }
 
 // Função para adicionar o item ao LocalStorage
@@ -71,6 +71,14 @@ function adicionarAoLocalStorage(chave, valor) {
     let itens = JSON.parse(localStorage.getItem(chave)) || [];
     itens.push(valor);
     localStorage.setItem(chave, JSON.stringify(itens));
+}
+
+function limparDados(formId) {
+    // Seleciona todos os campos dentro do formulário especificado pelo ID
+    const campos = document.querySelectorAll(`#${formId} input, #${formId} textarea`);
+
+    // Itera sobre os campos e limpa seus valores
+    campos.forEach(campo => campo.value = '');
 }
 
 

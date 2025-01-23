@@ -23,7 +23,7 @@
     <main class="cadastro">
         <div class="formulario">
             <h2 class="tituloFormulario">Formulário de Cadastro</h2>
-            <form id="cadastroForm">
+            <form id="cadastroForm" onsubmit="salvarCadastro(event)">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required><br><br>
 
@@ -42,7 +42,8 @@
                 <label for="endereco">Endereço:</label>
                 <textarea id="endereco" name="endereco" rows="4" required></textarea><br><br>
 
-                <button type="submit">Cadastrar</button>
+                <button id="btn-submit" type="submit">Cadastrar</button>
+                <button id="btn-limpar" type="button" onclick="limparDados('cadastroForm')">Limpar dados</button>
                 
             </form>
         </div>

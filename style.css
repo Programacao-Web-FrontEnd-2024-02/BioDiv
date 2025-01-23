@@ -111,21 +111,6 @@ input[type="password"]:focus {
     border-color: #99BF73;
 }
 
-button {
-    background-color: #678C30;
-    color: #ffffff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #99BF73;
-}
-
 p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -392,7 +377,7 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(103, 140, 48, 0.5);
 }
 
-button {
+#btn-submit {
     background-color: #678C30;
     color: #fff;
     padding: 12px 20px;
@@ -402,10 +387,29 @@ button {
     width: 100%;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
 }
 
-button:hover {
+#btn-submit:hover {
     background-color: #4d6a21;
+}
+
+#btn-limpar {
+    background-color: #ffffff;
+    color: #678C30;
+    border: 2px solid #678C30 !important;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+
+#btn-limpar:hover {
+    background-color: #e9e9e9;
 }
 
 footer {
