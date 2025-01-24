@@ -9,6 +9,7 @@ function salvarCadastro(event) {
     const dataNascimento = document.getElementById('data_nascimento').value;
     const senha = document.getElementById('senha').value;
     const endereco = document.getElementById('endereco').value;
+    const dataEnvio = new Date().toLocaleString();
 
     // Criando o objeto de cadastro
     const cadastro = {
@@ -18,6 +19,7 @@ function salvarCadastro(event) {
         dataNascimento,
         senha,
         endereco,
+        dataEnvio,
     };
 
     // Salvando no Local Storage
@@ -27,6 +29,31 @@ function salvarCadastro(event) {
     alert('Cadastro realizado com sucesso!');
     document.getElementById('cadastroForm').reset();
 }
+
+function salvarCadastroAdmin(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const dataEnvio = new Date().toLocaleString();
+
+    // Criando o objeto de cadastro
+    const cadastro = {
+        nome,
+        email,
+        dataEnvio,
+    };
+
+    // Salvando no Local Storage
+    adicionarAoLocalStorage('cadastros', cadastro);
+
+    // Exibindo mensagem e resetando o formulário
+    alert('Cadastro realizado com sucesso!');
+    document.getElementById('adminForm').reset();
+
+    exibirCadastros();
+}
+
 
 // *** Manipulação do Local Storage ***
 function adicionarAoLocalStorage(chave, valor) {
@@ -38,40 +65,29 @@ function adicionarAoLocalStorage(chave, valor) {
     localStorage.setItem(chave, JSON.stringify(itens));
 }
 
-function obterDoLocalStorage(chave) {
-    // Retorna os itens armazenados, ou uma lista vazia se não houver nada
-    return JSON.parse(localStorage.getItem(chave)) || [];
+// Função para exibir os cadastros
+function exibirCadastros() {
+    // Obtendo os cadastros do Local Storage
+    const cadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
+
+    // Referência ao elemento da lista
+    const listaElement = document.getElementById('cadastroList');
+
+    // Limpando a lista antes de adicionar os novos itens
+    listaElement.innerHTML = '';
+
+    // Adicionando cada cadastro na lista
+    cadastros.forEach(cadastro => {
+        const li = document.createElement('li');
+        li.textContent = `Nome: ${cadastro.nome}, E-mail: ${cadastro.email}, Data de Envio: ${cadastro.dataEnvio}`;
+        listaElement.appendChild(li);
+    });
 }
 
-// Chamando a função de inicialização
-inicializarCadastro();
-
-function salvarCadastroAdmin(event) {
-    event.preventDefault();
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-
-    // Criando o objeto de cadastro
-    const cadastro = {
-        nome,
-        email,
-    };
-
-    // Salvando no Local Storage
-    adicionarAoLocalStorage('cadastros', cadastro);
-
-    // Exibindo mensagem e resetando o formulário
-    alert('Cadastro realizado com sucesso!');
-    document.getElementById('cadastroForm').reset();
-}
-
-// Função para adicionar o item ao LocalStorage
-function adicionarAoLocalStorage(chave, valor) {
-    let itens = JSON.parse(localStorage.getItem(chave)) || [];
-    itens.push(valor);
-    localStorage.setItem(chave, JSON.stringify(itens));
-}
+// Chamada inicial para exibir os cadastros existentes quando a página é carregada
+window.onload = function() {
+    exibirCadastros();
+};
 
 function limparDados(formId) {
     // Seleciona todos os campos dentro do formulário especificado pelo ID
