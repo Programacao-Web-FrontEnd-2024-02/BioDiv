@@ -34,7 +34,15 @@
                 <button id="btn-limpar" type="button" onclick="limparDados('adminForm')">Limpar dados</button>
             </form>
         </div>
-        <ul id="cadastroList"></ul>
+        <div class="pesquisa">
+            <label for="pesquisa">Pesquisar:</label>
+            <input type="text" id="pesquisa" placeholder="Digite o nome ou email">
+            <button id="btn-pesquisa" type="button" onclick="pesquisarCadastros()">Pesquisar</button>
+            <button id="btn-pesquisa" type="button" onclick="exibirCadastros()">Limpar filtro</button>
+        </div>
+        <ul type="none" id="cadastroList"></ul>
+        <button id="btn-excluir-todos" type="button" onclick="excluirTodosCadastros()">Excluir Todos</button>
+
     </main>
 
     <footer>

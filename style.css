@@ -68,7 +68,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 83.4vh;
+    height: 130vh;
     background-color: #E2FCC5;
 }
 
@@ -405,9 +405,8 @@ textarea:focus {
 #btn-limpar {
     background-color: #ffffff;
     color: #678C30;
-    border: 2px solid #678C30 !important;
+    border: 2px solid #678C30;
     padding: 12px 20px;
-    border: none;
     border-radius: 6px;
     font-size: 18px;
     width: 100%;
@@ -420,6 +419,58 @@ textarea:focus {
     background-color: #f0f0f0;
 }
 
+#btn-excluir {
+    background-color: #ffffff;
+    color: #678C30;
+    border: 2px solid #678C30;
+    padding: 1px 17px;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 80px;
+    height: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+
+#btn-excluir:hover {
+    background-color: #f0f0f0;
+}
+
+#btn-excluir-todos {
+    background-color: #678C30;
+    color: #fff;
+    padding: 1px 17px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+
+#btn-excluir-todos:hover {
+    background-color: #4d6a21;
+}
+
+#btn-pesquisa {
+    background-color: #678C30;
+    color: #fff;
+    padding: 1px 17px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 30%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+
+#btn-pesquisa:hover {
+    background-color: #4d6a21;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -427,16 +478,17 @@ body {
     padding: 0;
 }
 
-ul.lista {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 80%;
+#cadastroList li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
 }
 
-ul.lista li {
+
+ul {
     background-color: #ffffff;
-    border: 1px solid #214013;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
